@@ -16,7 +16,7 @@ signupRouter.post("/family",(req,res)=>{
     FamilyModel.find({email:req.body.email})
                 .exec()
                 .then(user=>{
-                    if(user.length > 0){
+                    if(user.length >= 1){
                         return res.status(409).json({
                             error: "Email already exist"
                         })
@@ -60,7 +60,7 @@ signupRouter.post("/therapist",(req,res)=>{
     TherapistModel.find({email:req.body.email})
                 .exec()
                 .then(user=>{
-                    if(user.length > 0){
+                    if(user.length >= 1){
                         return res.status(409).json({
                             error: "Email already exist"
                         })
