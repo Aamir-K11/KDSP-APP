@@ -31,11 +31,13 @@ signupRouter.post("/family",(req,res)=>{
                                 });
                             }
                     
+
                             else{
                                 const Family = new FamilyModel({
                                     familyName: req.body.familyName,
                                     email: req.body.email,
                                     password: hash,
+                                    age: req.body.age,
                                     therapy: req.body.therapy
                                 });
                     

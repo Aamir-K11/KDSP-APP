@@ -3,9 +3,11 @@ const {Schema} = mongoose;
 
 const familySchema = Schema(
 {
+    _id : Schema.Types.ObjectId,
     familyName : {type: String, required: true},
     email: {type: String, required: true},
     password: {type:String, required:true},
+    age: {type: Number, required: true, min: 6.5},
     state:
     {
         type: String,

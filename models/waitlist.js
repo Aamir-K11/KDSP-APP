@@ -3,9 +3,11 @@ const {Schema} = mongoose;
 const {FamilySchema} = require("../models/family");
 
 
-const waitListShema = Schema(
+const waitListSchema = Schema(
 {
-    Families = {type: [FamilySchema], default: {}}
+    family : FamilySchema,
+    remarks : {type: String, default : ""},
+    dateofentry: {type: Date, default: Date.now()}
 
 });
 
@@ -13,6 +15,6 @@ const waitListShema = Schema(
 
 module.exports = 
 {
-WaitlistSchema : waitListShema,    
+WaitlistSchema : waitListSchema,    
 WaitlistModel: mongoose.model('Waitlist',waitListSchema)
 }
