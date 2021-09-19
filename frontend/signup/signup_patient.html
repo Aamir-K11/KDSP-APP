@@ -1,0 +1,59 @@
+<head>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/signup_in.css">    
+    <!--<script src="../js/signup_in.js"></script>-->
+    
+</head>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+
+<form method="post" action="index.html">
+<div class="box">
+    <h1>Sign up as Patient</h1>
+
+    <input type="text" name="name" class="email" placeholder="Name" />
+
+    <input type="text" name="fathers_name" class="email" placeholder="Father's Name" />
+
+    <input type="email" name="email" class="email" placeholder="E-mail" />
+
+    <input type="phone" name="phone" class="email" placeholder="Phone Number" />
+
+    <input type="date" name="dob" value="dob" class="email" />
+    <br>
+    <br>
+
+    <input type="checkbox" id="ot" name="ot" value="OT">
+    <label for="ot">OT</label>
+    <input type="checkbox" id="pt" name="pt" value="PT">
+    <label for="pt"> PT</label>
+    <input type="checkbox" id="st" name="st" value="ST">
+    <label for="st"> ST</label>
+
+    <br>
+
+
+    <select name="communication" id="communication" class="email">
+        <option value="" disabled selected hidden>Contact Preference</option>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+    </select>
+
+    <input type="password" name="password" class="email" placeholder="••••••••" />
+    
+    <br>
+    <a href="#"><div class="btn" style="margin-left: 37%;">Sign Up</div></a> <!-- End Btn -->  
+</div> <!-- End Box -->
+  
+</form>
+
+<span>Already have an account? <a href='../signin/signin_patient.html'><u style="color:#f1c40f;">Sign in</u></a></span>
+  
+<script src="ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
