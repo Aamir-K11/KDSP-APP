@@ -10,7 +10,6 @@ waitlistRoute.use(express.json());
 waitlistRoute.get("/",(req,res)=>{
         FamilyModel.find({state:"Approved"})
                    .then(value=>{
-                            console.log(value);
                             WaitlistModel.create(value).then(result => {
                                 return res.status(202).json({status: "Success"})})
                                                        .catch(err=>{return res.status(500).json({status: err})});

@@ -11,7 +11,7 @@ const familySchema = Schema(
     state:
     {
         type: String,
-        enum: ['Initialized','Approved','Waiting'],
+        enum: ['Initialized','Approved','Waiting','Enrolled'],
         default: 'Initialized'
     },
     therapy : {
